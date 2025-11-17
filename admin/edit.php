@@ -79,7 +79,7 @@ body {
             <div class="col-md-4 mx-auto">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="text-center">Form Registrasi</h4>
+                        <h4 class="text-center">Form Edit</h4>
                        <form action="pedit.php" method="POST">
     <?php
     if(isset($_GET['gagal'])) {?>

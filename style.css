@@ -27,7 +27,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    margin-top: 150px;
+    margin-top: 32px;
 }
 
 span {
@@ -96,7 +96,7 @@ nav .nav-link:hover {
 }
 /* Home Section */
 
-.hero {
+.hero-section {
   min-height: 100vh;
 }
 
@@ -144,8 +144,7 @@ nav .nav-link:hover {
 
 .about {
    min-height: 100vh;
-   /* position: relative;
-   z-index: 1; */
+   background-color: whitesmoke;
 }
 
 .judul-about {
@@ -168,7 +167,7 @@ nav .nav-link:hover {
   font-style: bold;
   line-height: 1.8;
   text-align: justify;
-  color: var(--antiflash-white);
+  color: var(--yinmn-blue);
 }
 
 .about-image {
