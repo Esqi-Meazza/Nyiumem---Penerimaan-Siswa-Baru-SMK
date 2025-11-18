@@ -92,7 +92,7 @@ include 'service/koneksi.php';
     <div class="card">
       <div class="card-body">
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
 
        <?php
 $sql = "SELECT * FROM casis";
