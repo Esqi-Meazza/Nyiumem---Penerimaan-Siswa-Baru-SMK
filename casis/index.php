@@ -14,6 +14,14 @@ include '../service/koneksi.php';
   <title>Penerimaan Siswa Baru</title>
 </head>
 <style>
+  .navbar-brand img {
+  width: 46px;       
+  height: 46px;     
+  margin-left: 24px; 
+  transition: all 0.4s ease;
+}.navbar-brand img:hover {
+  transform: scale(1.40); 
+}
   .card {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -21,7 +29,11 @@ include '../service/koneksi.php';
     backdrop-filter: blur(10px);
     border-radius: 10px;
     color: white;
-  }
+    transition: all 0.3s ease;
+    }.card:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .2);
+    transform: translateY(-5px);
+    }
 
   h2{
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
