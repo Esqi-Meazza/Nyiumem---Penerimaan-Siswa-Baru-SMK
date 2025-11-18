@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'service/koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,7 +13,6 @@
   <link rel="stylesheet" href="style.css" />
   <title>Penerimaan Siswa Baru</title>
 </head>
-
 <body class="bg-light">
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg bg-gradient-custom py-3 animate__animated animate__fadeInDown">
@@ -23,6 +27,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link fw-semibold" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#info">Info</a>
           </li>
 
           <!-- Nav Login -->
@@ -77,6 +84,46 @@
        </div>
       </div>
     </div>
+
+  <!-- Info -->
+   <div class="info py-5">
+  <div id="info" class="container info-content py-4">
+    <h1 class="text-center judul-info mb-5 text-purple">STATUS <span>PENDAFTARAN</span></h1>
+    <div class="card">
+      <div class="card-body">
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+       <?php
+$sql = "SELECT * FROM casis";
+$hasil = $koneksi->query($sql);
+?>
+
+<?php while($row = $hasil->fetch_assoc()) { 
+    $fotoFix = str_replace("../", "", $row['foto']);
+?>
+
+  <div class="col">
+    <div class="card">
+      <img src="<?php echo $fotoFix; ?>" class="card-img-top">
+
+      <div class="card-body">
+        <h5 class="card-title"><?php echo $row['nama']; ?></h5>
+        <p class="card-text"><?php echo $row['alamat']; ?></p>
+        <p class="card-text"><?php echo $row['status']; ?></p>
+      </div>
+    </div>
+  </div>
+
+<?php } ?>
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@ include '../service/koneksi.php';
 </style>
 <body class="bg-light">
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-gradient-custom py-3 animate__animated animate__fadeInDown">
+  <nav class="navbar fixed-top navbar-expand-lg bg-gradient-custom py-3">
     <div class="container-fluid px-4">
       <a class="navbar-brand fw-bold text-purple">
         <img src="../assets/img/logoSMKN2.png" alt="logosmkn2" width="46" height="46" />
@@ -62,10 +62,10 @@ include '../service/koneksi.php';
 
   <!-- Main Content Row -->
   <section class="hero-section d-flex align-items-center">
-    <div class="container py-1">
+    <div class="container py-3">
       <div class="row g-4">
         <!-- Form Registrasi -->
-        <div class="col-lg-7">
+        <div class="col-lg-7 animate__animated animate__fadeInLeft animate__delay-0.8s">
           <div class="card">
             <div class="card-body">
               <h4 class="text-center mb-4">Form Registrasi</h4>
@@ -143,7 +143,7 @@ include '../service/koneksi.php';
         </div>
 
         <!-- Status Pendaftaran -->
-        <div class="col-lg-5 mb-4">
+        <div class="col-lg-5 mb-2 animate__animated animate__fadeInRight animate__delay-1s">
           <div class="card">
             <div class="card-body">
               <h4 class="text-center mb-4">Status Pendaftaran</h4>
