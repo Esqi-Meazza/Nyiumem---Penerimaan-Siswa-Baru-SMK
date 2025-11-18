@@ -11,6 +11,6 @@ if (mysqli_connect_errno()) {
 }
 
 if (!mysqli_set_charset($koneksi, "utf8")) {
-    die("Error setting character set: " . mysqli_error($conn));
+    die("Error setting character set: " . mysqli_error($koneksi));
 }
 ?>
