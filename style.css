@@ -19,6 +19,23 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--antiflash-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--air-superiority-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--uranian-blue);
+}
+
 body {
   background: linear-gradient(
       to bottom right,
@@ -65,16 +82,13 @@ span {
 }
 
 nav .nav-link {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   color: var(--antiflash-white);
 }
 
 nav .nav-link:hover {
-  background-color: var(--air-superiority-blue);
-  border: none;
-  border-radius: 12px;
-  transform: rotateY(-2deg);
-  color: var(--white);
+  color: var(--uranian-blue);
+  transform: translateY(-2px);
 }
 
 .text-purple {
